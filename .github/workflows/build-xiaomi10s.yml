@@ -7,7 +7,7 @@ on:
 env:
   # Device env
   DEVICE_NAME : "XiaoMi10S"
-  DEVICE_CODENAME : "device_codename"
+  DEVICE_CODENAME : "thyme"
 
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
   EXTRA_CMDS : "LD=ld.lld LLVM=1 LLVM_IAS=1"
@@ -46,7 +46,7 @@ env:
   NEED_DTBO : false
   NEED_SAFE_DTBO : false
 
-  ROM_TEXT : "rom_android"
+  ROM_TEXT : "xiaomi_10s_thyme"
 
   # Other env
   PYTHON_VERSION: "3" # Only 2(Ubuntu 22.04 and Ubuntu 20.04) or 3(Any OS Versions).
