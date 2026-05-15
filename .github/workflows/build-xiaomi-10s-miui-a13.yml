@@ -12,7 +12,7 @@ env:
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
   EXTRA_CMDS : "LD=ld.lld LLVM=1 LLVM_IAS=1"
 
-  KERNEL_SOURCE : "https://github.com/gaodayihao/kernel_xiaomi_thyme.git"
+  KERNEL_SOURCE : "https://github.com/PixelExperience-Devices/kernel_xiaomi_thyme.git"
   KERNEL_BRANCH : "thirteen"
 
   CLANG_SOURCE : "https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b.git"
@@ -56,7 +56,7 @@ env:
 
   KERNELSU_METHOD: "shell" # shell, manual and only.
 
-  PATCHES_SOURCE: "PixelExperience-Devices/NonGKI_Kernel_Patches" # [your_name]/[your_patch] -> gooder123/NonGKI_Patcher
+  PATCHES_SOURCE: "gaodayihao/NonGKI_Kernel_Patches" # [your_name]/[your_patch] -> gooder123/NonGKI_Patcher
   PATCHES_BRANCH: "mi_kernel" # [your_branch] -> main
 
   SUSFS_FOLDER_FIXED: "mi10s_miui" # Fill in your patch prefix directory here. Leave it blank if there isn't one. -> your_folder
