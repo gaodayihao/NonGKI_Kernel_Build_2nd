@@ -1,4 +1,4 @@
-name: Build Xiaomi 10s
+name: Build Xiaomi 10s (HyperOS A13)
 
 on:
   workflow_call:
