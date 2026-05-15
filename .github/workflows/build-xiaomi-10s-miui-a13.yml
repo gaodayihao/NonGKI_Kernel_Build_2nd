@@ -60,7 +60,7 @@ env:
   PATCHES_BRANCH: "mi_kernel" # [your_branch] -> main
 
   SUSFS_FOLDER_FIXED: "mi10s_miui" # Fill in your patch prefix directory here. Leave it blank if there isn't one. -> your_folder
-  SUSFS_PATCH_FIXED: "" # Fill in your patches here. If there are multiple patches, please separate them with a comma. Leave it blank if there isn't one. -> patch1,patch2
+  SUSFS_PATCH_FIXED: "susfs_200_fixed" # Fill in your patches here. If there are multiple patches, please separate them with a comma. Leave it blank if there isn't one. -> patch1,patch2
 
   REKERNEL_ENABLE: "false" # if u need Re:Kernel.
 
@@ -82,7 +82,7 @@ env:
   GENERATE_CHIP: "qcom" # only supported for qcom and mediatek.
 
   BUILD_DEBUGGER: "true" # Output build errors.
-  SKIP_PATCH: "true" # Ignore errors found in Patch Debugger.
+  SKIP_PATCH: "false" # Ignore errors found in Patch Debugger.
 
   BUILD_OTHER_CONFIG: "false" # Merge config files.
   MERGE_CONFIG_FILES: "vendor/debugfs.config,vendor/lahaina_QGKI.config"
