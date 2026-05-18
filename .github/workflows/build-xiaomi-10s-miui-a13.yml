@@ -60,7 +60,7 @@ env:
   PATCHES_BRANCH: "mi_kernel" # [your_branch] -> main
 
   SUSFS_FOLDER_FIXED: "mi10s_miui" # Fill in your patch prefix directory here. Leave it blank if there isn't one. -> your_folder
-  SUSFS_PATCH_FIXED: "susfs_155_fixed,remove_dtbo_img" # Fill in your patches here. If there are multiple patches, please separate them with a comma. Leave it blank if there isn't one. -> patch1,patch2
+  SUSFS_PATCH_FIXED: "susfs_155_fixed,remove_dtbo_img,fixed_uts_version_timestamp" # Fill in your patches here. If there are multiple patches, please separate them with a comma. Leave it blank if there isn't one. -> patch1,patch2
 
   REKERNEL_ENABLE: "false" # if u need Re:Kernel.
 
@@ -123,7 +123,6 @@ jobs:
           # disable CONFIG_BUILD_ARM64_DT_OVERLAY
 
           export KBUILD_BUILD_VERSION=1
-          export KBUILD_BUILD_TIMESTAMP="Thu Dec 19 10:00:00 CST 2024"
           echo "CONFIG_BUILD_ARM64_DT_OVERLAY=n" >> ./arch/${{ env.KERNEL_ARCH }}/configs/${{ env.DEFCONFIG_NAME }}
           sed -i '0,/CONFIG_LOCALVERSION=.*/s//CONFIG_LOCALVERSION="-perf"/' ./arch/${{ env.KERNEL_ARCH }}/configs/${{ env.DEFCONFIG_NAME }}
           echo "CONFIG_LOCALVERSION_AUTO=n" >> ./arch/${{ env.KERNEL_ARCH }}/configs/${{ env.DEFCONFIG_NAME }}
