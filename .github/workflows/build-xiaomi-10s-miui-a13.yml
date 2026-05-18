@@ -32,7 +32,7 @@ env:
   KERNELSU_SOURCE : "https://raw.githubusercontent.com/ReSukiSU/ReSukiSU/fb771414f249ab886c09f2cfcbbf91c4b4dab2d1/kernel/setup.sh"
   KERNELSU_BRANCH : "fb771414f249ab886c09f2cfcbbf91c4b4dab2d1"
 
-  KERNELSU_AUTO_GET : "false" # if u want easy setting kernelsu, u can true.
+  KERNELSU_AUTO_GET : "true" # if u want easy setting kernelsu, u can true.
   KERNELSU_AUTO_FORK : "resukisu" # magic, rsuntk, next, resukisu and sukisu
 
   SUSFS_ENABLE : true
@@ -60,7 +60,7 @@ env:
   PATCHES_BRANCH: "mi_kernel" # [your_branch] -> main
 
   SUSFS_FOLDER_FIXED: "mi10s_miui" # Fill in your patch prefix directory here. Leave it blank if there isn't one. -> your_folder
-  SUSFS_PATCH_FIXED: "susfs_155_fixed,remove_dtbo_img,uaccess_fixed" # Fill in your patches here. If there are multiple patches, please separate them with a comma. Leave it blank if there isn't one. -> patch1,patch2
+  SUSFS_PATCH_FIXED: "susfs_155_fixed,remove_dtbo_img" # Fill in your patches here. If there are multiple patches, please separate them with a comma. Leave it blank if there isn't one. -> patch1,patch2
 
   REKERNEL_ENABLE: "false" # if u need Re:Kernel.
 
