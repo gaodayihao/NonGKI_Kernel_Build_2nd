@@ -122,7 +122,11 @@ jobs:
 
           # disable CONFIG_BUILD_ARM64_DT_OVERLAY
 
+          export KBUILD_BUILD_VERSION=1
+          export KBUILD_BUILD_TIMESTAMP="Thu Dec 19 10:00:00 CST 2024"
           echo "CONFIG_BUILD_ARM64_DT_OVERLAY=n" >> ./arch/${{ env.KERNEL_ARCH }}/configs/${{ env.DEFCONFIG_NAME }}
+          echo "CONFIG_LOCALVERSION_AUTO=n" >> ./arch/${{ env.KERNEL_ARCH }}/configs/${{ env.DEFCONFIG_NAME }}
+          echo "CONFIG_LOCALVERSION=perf" >> ./arch/${{ env.KERNEL_ARCH }}/configs/${{ env.DEFCONFIG_NAME }}
 
       - name: 🧰 Patch Kernel of Re:Kernel
         uses: ./.github/workflows/patch-rekernel
