@@ -15,7 +15,7 @@
 | Samsung A71 | All | a71 | [4.14/nduykha/kernel_samsung_sm7150](https://github.com/nduykha/kernel_samsung_sm7150) | Based AOSP | 16 | AnyKernel3 | ReSukiSU | ✅ | Inline | ❌ | ✅ | ✅ | Stable |  
 | Samsung A71 | All | a71 | [4.14/nduykha/kernel_samsung_sm7150](https://github.com/nduykha/kernel_samsung_sm7150) | OneUI 8 | 16 | AnyKernel3 | ReSukiSU | ✅ | Inline | ❌ | ✅ | ✅ | Stable |  
 | Xiaomi Mi Pad 4 | All | clover | [4.19/pix106/southwest](https://github.com/pix106/android_kernel_xiaomi_southwest-4.19) | Lineage OS 22 | 15 | AnyKernel3 | ReSukiSU | ✅ | Inline | ❌ | ❌ | ❌ | Stable |  
-| Redmi K30 Ultra | All | cezanne | [4.14/HuaLiMao-AQ/AOSP](https://github.com/HuaLiMao-AQ/android_kernel_xiaomi_mt6873) | Based AOSP | 15 | AnyKernel3 | Next | ✅ | Inline | ❌ | ✅ | ✅ | Stable |  
+| Redmi K30 Ultra | All | cezanne | [4.14/HuaLiMao-AQ/AOSP](https://github.com/HuaLiMao-AQ/android_kernel_xiaomi_mt6873) | Based AOSP | 15 | AnyKernel3 | Next | ✅ | Inline | ❌ | ✅ | ❌ | Stable |  
 | Xiaomi 10s | All | thyme | [4.19/PixelExperience-Devices/kernel_xiaomi_thyme](https://github.com/PixelExperience-Devices/kernel_xiaomi_thyme) | HyperOS | 13 | AnyKernel3 | ReSukiSU | ✅ | Inline | ❌ | ❌ | ❌ | Stable |  
 
 **English**:  
