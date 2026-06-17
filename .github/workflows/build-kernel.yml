@@ -54,7 +54,7 @@ jobs:
     secrets: inherit
 
   build-xiaomi-10s-miui-a13:
-    name: "Build Xiaomi 10s (HyperOS A13)"
+    name: "Xiaomi 10s (HyperOS A13)"
     strategy:
       fail-fast: true
     uses: ./.github/workflows/build-xiaomi-10s-miui-a13.yml
